@@ -1,0 +1,13 @@
+Date  		Who       Start		Stop 		 Interruptions 				Question 		        TimeOnTask   
+Sept 20		anksun	  3:51PM	6:03PM		 None					Q1 from Problem Set 01 	        2 hrs 11 mins
+Sept 20         anksun    6:03PM        6:05PM           None                                   Committing to GIT               0 hrs 2 mins
+
+
+  
+
+==================================================
+
+Total Time On Task Q1 (minutes)                  132 
+TOTQ20 (hours and tenths)                        2.2 
+
+=======================================================

@@ -1,0 +1,55 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname snacks) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ())))
+;;A snack machine has two items: chocolate bars and carrot sticks. 
+Thanks to the University's healthy-eating initiative, chocolate bars cost $1.75, 
+but carrot sticks cost only $0.70. A customer may put any sequence of coins into 
+the machine, and then select an item. If the customer has deposited enough money 
+into the machine, and the machine is not out of the selected item, then the machine 
+will dispense the requested item and return the customer's change (if any). 
+Otherwise the machine does nothing. The customer may also press "release",
+in which case the machine will return all the money that the customer has put in during the current transaction.
+;;For example, the customer may put three 25-cent pieces into the machine. If he 
+then selects the carrot sticks, the machine will dispense one package of carrot
+sticks and 5 cents in change. If he tries to select the chocolate bars instead, 
+nothing will happen. (The customer must press "release" to get his money back. 
+                          He may do that at any time.) If the customer puts two
+25-cent pieces, a dime, and 3 nickels into the machine (in any order), the same 
+things will happen. If the machine is out of the requested item, nothing happens; 
+the customer must still press "release" to get his money back.
+;;
+;;The machine has a container, called the bank, that contains all the money it has 
+kept from customers' purchases. The customer's money is added to the bank only after
+he or she has successfully made a purchase.
+;;
+;;The possible inputs from the customer are given by the following data definition:
+;;
+;;A CustomerInput is one of
+;;-- a positive Number PosInt interp: insert the specified number of cents
+;;-- "chocolate"       interp: request a chocolate bar
+;;-- "carrots"         interp: request a package of carrot sticks
+;;-- "release"         interp: return all the coins that the customer has put in
+;;You are to write a file called snacks.rkt that provides the following functions:
+;;
+;;initial-machine : Number Number NonNegInt NonNegInt-> Machine
+;;GIVEN: the number of chocolate bars and the number of packages of
+;;carrot sticks
+;;RETURNS: a machine loaded with the given number of chocolate bars and
+;;carrot sticks, with an empty bank.
+;;
+;;machine-next-state : Machine CustomerInput -> Machine
+;;GIVEN: a machine state and a customer input
+;;RETURNS: the state of the machine that should follow the customer's
+;;input
+;;
+;;machine-chocolates : Machine ->  Number NonNegInt
+;;GIVEN: a machine state
+;;RETURNS: the number of chocolate bars left in the machine
+;;
+;;machine-carrots : Machine ->  Number NonNegInt
+;;GIVEN: a machine state
+;;RETURNS: the number of packages of carrot sticks left in the machine
+;;
+;;machine-bank : Machine ->  Number NonNegInt
+;;GIVEN: a machine state
+;;RETURNS: the amount of money in the machine's bank, in cents

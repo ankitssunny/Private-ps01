@@ -1,0 +1,118 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname robot) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ())))
+;You have taken a job at a robot factory. The robots your factory builds are circles 
+;of radius 15 that move around a 200 x 400 canvas room surrounded by a wall.
+;Watch the video of the Roomba. At every step, the robot can move forward or rotate
+;90 degrees either right or left. The robot can also sense when it has run into a wall.
+;We will use graphics-style coordinates instead of standard mathematical coordinates.
+;That is, (0,0) is the northwest corner of the canvas room. The x-coordinate increases 
+;as one goes east, and the y-coordinate increases as one goes south. So, the southeast
+;corner is at (200,400).
+;
+;The robot may start at any position: entirely inside the canvas room, entirely outside
+;the canvas room, or partly inside and partly outside (that is, on an edge or corner).
+;We imagine that the walls or edges are one-way traps. So the robot can travel anywhere
+;until it is entirely inside the canvas room. Once that happens, it cannot get out again.
+;
+;You are to write a file called robot.rkt that provides the following functions:
+
+
+(require rackunit)
+(require "extras.rkt")
+(require 2htdp/image)
+(provide)
+
+
+(define-struct robot(x y radius facedirection))
+
+;; A robot is a
+;;(make-robot Real Real NonNegInt String)
+;; WHERE: radius is equal to 15
+;; INTERP:
+;;        x is the x co-ordinate of the center of the robot
+;;        y is the y co-ordinate of the center of the robot
+;;        radius is the radius of the robot which is a constant at 15
+;;        facedirection is the direction in which the face of the robot is
+;;        Not all Strings is a facedirection but all facedirections is a String
+;;        facedirection can be one of the four directions i.e east,west,north
+;;        or south
+
+;; Template
+;;robot-fn : robot => ??
+;;(define (robot-fn rob)
+;;  (...
+;;   (robot-x rob)
+;;   (robot-y rob)
+;;   (robot-radius rob)
+;;   (robot-facedirection rob)))
+
+;;Defining Constant : Defining the radius of the robot as constant as it 
+;;                    is fixed at size 15.
+
+(define radius 15)
+
+;; Defining Function initial-robot
+;; initial-robot : Real Real-> Robot
+;; GIVEN: a set of (x,y) coordinates
+;; RETURNS: a robot with its center at those coordinates, facing north(up)
+;; EXAMPLE:
+;;         (initial-robot 5 10) => Creates a Circle of fixed radius 15 with 
+;;         its centre at co-ordinates (5,10) with the face of the Robot in 
+;;         North Direction
+
+(define (initial-robot x y)
+  (create-robot(make-robot x y radius "North" ))) 
+
+;;create-robot: robot => ??
+;;(define (robot-fn rob)
+;;  (...
+;;   (robot-x rob)
+;;   (robot-y rob)
+;;   (robot-radius rob)
+;;   (robot-facedirection rob)))
+
+(initial-robot 5 10)
+
+;; robot-left : Robot -> Robot
+;; GIVEN: a robot
+;; RETURNS: a robot like the original, but turned 90 degrees either left
+;; or right.
+;; EXAMPLES:
+;; STRATEGY: Cases on facedirection 
+(define (robot-left rob)
+  (
+   (robot-x rob)
+   (robot-y rob)
+   (robot-radius rob)
+   (robot-facedirection rob)))
+
+
+;robot-right: Robot -> Robot
+;GIVEN: a robot
+;RETURNS: a robot like the original, but turned 90 degrees either left
+;or right.
+;
+;robot-forward : Robot PosInt -> Robot
+;GIVEN: a robot and a distance
+;RETURNS: a robot like the given one, but moved forward by the
+;specified number of pixels distance.  If moving forward the specified number of
+;pixels distance would cause the robot to move from being
+;entirely inside the canvas room to being even partially outside the canvas room,
+;then the robot should stop at the wall.
+;
+
+ 
+;robot-north? : Robot -> Boolean
+;robot-south? : Robot -> Boolean
+;robot-east? : Robot -> Boolean
+;robot-west? : Robot -> Boolean
+;GIVEN: a robot
+;ANSWERS: whether the robot is facing in the specified direction.
+
+
+
+(define room (empty-scene 200 400))
+  
+  
+
