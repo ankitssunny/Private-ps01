@@ -37,8 +37,8 @@
 ;; -- "left"
 ;; -- "right"
 ;; INTERPRETATION:
-;;                right is selected when right arrow has been pressed
-;;                left is selected when left arrow has been pressed
+;;                right when selected moves cursor to the right
+;;                left when selected moves cursor to the left
 ;;                tab (\t) and delete (\u00F7) are ignored
 ;;                backspace (\b) removes the last character in the pre string
 ;;                single character except as mentioned above are added to the

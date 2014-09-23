@@ -275,7 +275,3 @@
 ;;(machine-next-state (make-machine 12 5 200 0 34 ) carrots)
 ;;(machine-next-state (make-machine 12 5 200 0 34 ) release)
 
-
-(machine-next-state 
-               (machine-next-state (initial-machine 3 4) 12)
-            "chocolate")

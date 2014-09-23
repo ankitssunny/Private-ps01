@@ -1,13 +1,37 @@
-Date  		Who       Start		Stop 		 Interruptions 				Question 		        TimeOnTask   
-Sept 20		anksun	  3:51PM	6:03PM		 None					Q1 from Problem Set 01 	        2 hrs 11 mins
-Sept 20         anksun    6:03PM        6:05PM           None                                   Committing to GIT               0 hrs 2 mins
+Date  		Who       Start		Stop 		 Interruptions 				Question 		        	TimeOnTask   
+Sept 20		anksun	  3:51PM	6:03PM		 None					Q1 from Problem Set 01 	        	2 hrs 11 mins
+Sept 20         anksun    6:03PM        6:05PM           None                                   Committing to GIT               	0 hrs 2 mins
+Sept 20         anksun	  7:00PM        9:16PM		 Snacks Break				Still on Problem 1Committing 		2 hrs 16 mins	 
+Sept 20         anksun    9:25PM        10:37PM          None                                   Problem 1 nearly done           	1 hrs 12 mins  
+Sept 20         anksun    11:00PM       11:53PM          None                                   Problem 1 robot-forward function        0 hrs 53 mins    
+Sept 21         anksun    4:15AM        04:15AM          None                                   Forgot to commit. Committing now        0 hrs 1 mins  
+Sept 21         anksun    5:15AM        08:00AM          None                                   Still on robot-forward                  2 hrs 45 mins  
+Sept 21         anksun    5:00PM        08:12PM          None                                   Problem 1 done                          3 hrs 12 mins  
+Sept 21         anksun    8:13PM        08:14PM          None                                   Committing                              3 hrs 12 mins  
+
+====Starting on problem 2 at 8:37 pm========================
+
+Sept 22         anksun    8:37PM        12:25AM          None                                   Problem2 completed                      3 hrs 48 mins  
+Sept 22         anksun    12:25AM       12:25AM          None                                   committing                      	0 hrs  2 mins  
+Sept 22         anksun    01:01AM       01:03AM          None                                   committing Problem 2 again             	0 hrs  2 mins  
+Sept 22         anksun    02:10PM       02:20AM          None                                   Reviewing Problem 1                     0 hrs 10 mins  
 
 
-  
+========Starting Problem 3 at 1:03 am======================
+
+Sept 22         anksun    01:03AM        07:30AM          None                                   Problem3 completed. Committing         6 hrs 27 mins  
+Sept 22         anksun    01:35PM        02:27PM          None                                   Problem3 tweakedd . Committing         0 hrs 52 mins  
+   
+========Started Problem 4 at 2:45 pm======================
+
+Sept 22         anksun    02:45PM        05:27PM          None                                   Problem 4 completed.Committing         2 hrs 42 mins  
 
 ==================================================
 
-Total Time On Task Q1 (minutes)                  132 
-TOTQ20 (hours and tenths)                        2.2 
+TOTQ1(hours and tenths) 11.1
+TOTQ2(hours and tenths) 3.5
+TOTQ3(hours and tenths) 7.2
+TOTQ4(hours and tenths) 2.5
+
 
 =======================================================
